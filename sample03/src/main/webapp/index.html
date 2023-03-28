@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+<form action="hello" id="frm" method="post">
+
+<h3>취미</h3>
+<input type="checkbox" name="hobby" value="picture">그림그리기
+<input type="checkbox" name="hobby" value="game">게임하기
+<input type="checkbox" name="hobby" value="movie">영화보기
+<br><br>
+
+<h3>좋아하는 사이트</h3>
+<select name="url" multiple="multiple">
+	<option value="naver">네이버</option>
+	<option value="google">구글</option>
+	<option value="zum">줌</option>
+</select>
+
+<button type="button">send</button>
+
+</form>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$("button").click(function(){
+		$("#frm").submit();
+	});
+});
+</script>
+
+
+
+</body>
+</html>

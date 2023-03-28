@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- 
+
+		web(front)   		-- > 	servlet(back)							-- > servlet or jsp or html
+		
+		HTML		
+		<a href=""					HttpServletRequest req						Object obj = req.getAttribute("문자열");	
+		<form action="" 			String str = req.getParameter("name");			
+			name=""					String arr[] = req.getParameterValues("name");
+		
+		JavaScript					
+		location.href=""			resp.sendRedirect("서브릿명")	
+									resp.sendRedirect("*.jsp")																			
+		Jquery						resp.sendRedirect("*.html")
+		
+		<form action=""				resp.sendRedirect("서브릿명?name=" + "홍길동")
+			.submit()													
+									req.setAttribute("문자열", object);																		
+									req.getRequestDispatcher("서브릿명").forward(req, resp);
+
+
+		저장공간
+		
+		cookie: client 저장. Java Script에서 주로 사용된다.
+				자료형(String)
+				ex) id, password
+		
+		session: server 저장. 기한을 설정
+				자료형(Object)
+				한글사용 금지!	 
+				
+				req.setAttribute("문자열", object);
+				Object obj = req.getAttribute("문자열");
+				
+				session.setAttribute("문자열", object);
+				Object obj = session.getAttribute("문자열");
+		
+		
+		cache : server 임시저장공간
+
+																		
+ -->
+ 
+<a href="hello">helloServlet으로 이동</a> 
+ 
+
+</body>
+</html>
+
+
+
+
+
+

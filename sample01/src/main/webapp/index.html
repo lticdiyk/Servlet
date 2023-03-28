@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- 
+		Servlet = Server + Applet
+		
+		get:	parameter가 오픈
+		post:	parameter가 보이지 않는다.(보안)
+ -->
+ 
+<form action="location" method="get">
+	<input type="submit" value="get이동">
+</form>
+<br>
+
+<form action="location" method="post">
+	<input type="submit" value="post이동">
+</form>
+<br>
+
+<a href="location">a tag move</a>
+<br><br>
+
+<button type="button" onclick="move()">JS이동</button>
+
+<script type="text/javascript">
+function move() {
+	location.href = "location";
+}
+
+</script>
+
+ 
+
+</body>
+</html>
+
+
